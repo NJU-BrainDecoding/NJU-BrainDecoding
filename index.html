@@ -7,8 +7,9 @@
     <title>NJU Brain Decoding</title>
     <link rel="canonical" href="https://nju-braindecoding.github.io/" />
     <script>
-      const next = location.pathname.replace(/^/NJU-BrainDecoding/?/, "/") + location.search + location.hash;
-      location.replace("https://nju-braindecoding.github.io" + next);
+      const targetOrigin = "https://nju-braindecoding.github.io";
+      const nextPath = location.pathname.replace(/^\/NJU-BrainDecoding\/?/, "/");
+      location.replace(targetOrigin + nextPath + location.search + location.hash);
     </script>
   </head>
   <body>
